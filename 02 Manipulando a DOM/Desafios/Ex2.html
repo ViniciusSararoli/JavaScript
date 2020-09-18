@@ -1,0 +1,55 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+    <style>
+      .pop{
+        background: #9e3535;
+        width: 200px;
+        height: 200px;
+        display: none;
+        
+      }
+    </style>
+</head>
+<body>
+  <div id="cad" class="cad">
+    <input type="button" value="Cadastrar" name="cadastro">  
+  </div>
+  <div id="pop" class="pop">
+    <input type="button" value="X" name="fechar">
+  </div>
+
+
+
+  
+  <script>
+    var cadastrar = document.querySelector
+    ('input[name=cadastro]')
+    var fechar = document.querySelector('input[name=fechar]')
+    var getRandomColor = document.querySelector('pop');
+
+    cadastrar.onclick = function() {
+      cadastrar = document.getElementById('pop').style.display = 'block';
+    }
+     fechar.onclick = function fechar () {
+      fechar = document.getElementById('pop').style.display = 'none'; 
+     }
+
+
+
+     getRandomColor.onmouseover = function getRandomColor() {
+var letters = "0123456789ABCDEF";
+var color = "#";
+for (var i = 0; i < 6; i++) {
+color += letters[Math.floor(Math.random() * 16)];
+}
+return color;
+}
+var newColor = getRandomColor(); // #E943F0
+
+  </script>
+</body>
+</html>

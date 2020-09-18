@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos Inline</title>
+</head>
+<body>
+<div id="salvar">
+  <button onclick="alerta()">Saltar</button>
+</div><br>
+<div>
+  <input type="text" name="Nome" onkeypress="mensagem()">
+</div>
+
+  <script>
+    function alerta(){
+      alert('Gostaria mesmo de Salvar');
+    }
+    function mensagem() {
+      alert('Colocar seu nome completo');
+    }
+  </script>
+</body>
+</html>

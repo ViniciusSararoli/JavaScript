@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lidando com elementos</title>
+</head>
+<body>
+  <div id="nome">
+    <input type="text" name="nome" id="nm">
+  </div>
+  <script>
+   var link = document.createElement('a');
+
+   link.setAttribute('href','https://app.rocketseat.com.br/node/curso-java-script');
+
+   var text = document.createTextNode('Acesse o site');
+   link.appendChild(text);
+
+   var container =document.getElementById('nome');
+   container.appendChild(link);
+
+   var input = document.querySelector('#nm');
+   container.removeChild(input);// se tirar aparece o input
+  </script>
+</body>
+</html>

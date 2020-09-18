@@ -1,0 +1,36 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+    <style>
+      .pop{
+        background: #9e3535;
+        width: 200px;
+        height: 200px;
+        display: none;
+        
+      }
+    </style>
+</head>
+<body>
+  <div id="cad" class="cad">
+    <input type="button" value="Cadastrar" name="cadastro">  
+  </div>
+  <div id="pop" class="pop">
+    <input type="text" name="nome">
+  </div>
+
+  <script>
+    var cadastrar = document.querySelector
+    ('input');
+
+    cadastrar.onclick = function() {
+      
+      cadastrar = document.getElementById('pop').style.display = 'block';
+      
+    }
+  </script>
+</body>
+</html>

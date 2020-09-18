@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com a DOM</title>
+</head>
+<body>
+
+<div id="Nome">
+  <input type="text" id="nome0" name="nome0"><br><br>
+  <input type="text" id="nome1" name="nome1"><br>
+
+  <br><button class="salvar">Salvar</button>
+</div>
+
+  <script>
+    var input1 = document.getElementById('nome0');
+    var input2 = document.getElementsByTagName('input');
+    var input3 = document.getElementsByTagName('input')[0];
+    var input4 = document.getElementsByClassName('salvar');
+    var input5 = document.querySelector('div#Nome button');
+    var input6 = document.querySelector('input[name=nome1]');
+    var input7 = document.querySelectorAll("input");
+
+    var btnSalvar = document.querySelector('button.salvar');
+
+    var inputName = document.querySelector('input[name=nome0]');
+    
+
+    btnSalvar.onclick = function() {
+      alert('Deseja realmente salvar?');
+      
+      var text = inputName.value;
+      alert(text);
+    }
+    
+    
+
+    console.log(input1);
+    console.log(input2);
+    console.log(input3);
+    console.log(input4);
+    console.log(input5);
+    console.log(input6);
+    console.log(input7);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function experiencia(anos) {
+ // código aqui
+     /* switch (anos) {
+        case 0: return 'niciante';
+        case 1: return 'niciante';
+        case 2: return 'Intermediario';
+        case 3: return 'Intermediario';
+        case 4: return 'Avançado';
+        case 5: return 'Avançado';
+        case 6: return 'Avançado';
+        case 7: return 'master';
+        default : return 'master';
+          break;
+      }*/
+      if (anos >= 0 && anos <= 1) {
+          return 'iniciante';
+      } else if(anos >= 1  && anos <= 3){
+        return 'Intermediário';
+      }else if(anos >= 3 && anos <= 6){
+        return 'Avançado';
+      }else{
+        return 'Master';
+      }
+}
+ 
+var anosEstudo = experiencia(3);
+//var anosEstudo = 7;
+//experiencia(anosEstudo);
+
+console.log(anosEstudo);
+// De 0-1 ano: Iniciante
+// De 1-3 anos: Intermediário
+// De 3-6 anos: Avançado
+// De 7 acima: Master
+  </script>
+</body>
+</html>

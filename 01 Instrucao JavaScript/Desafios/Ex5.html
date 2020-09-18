@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex5</title>
+</head>
+<body>
+  <script>
+    var usuarios = [
+ {
+ nome: "Diego",
+ habilidades: ["Javascript", "ReactJS", "Redux"]
+ },
+ {
+ nome: "Gabriel",
+ habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+ }
+];
+
+//console.log(usuarios);
+console.log(usuarios[0].nome, 'posui as habilidades: ',usuarios[0].habilidades[0],',',usuarios[0].habilidades[1],'e',usuarios[0].habilidades[2]);
+
+console.log(usuarios[1].nome,'possui as habilidades: ', usuarios[1].habilidades.join());
+
+/* O Diego possui as habilidades: Javascript, ReactJS, Redux
+   O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir */
+  </script>
+</body>
+</html>
