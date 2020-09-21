@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Ex4</title>
+  </head>
+  <body>
+    <div class="nomes" id="nomes">
+      <ul id="lista"></ul>
+      <input type="text" name="names" id="names" placeholder="Digite seu nome...">
+      <button id="add">Adicionar</button>
+    </div>
+    <ul>
+      
+    <script>
+      var lista = document.querySelector('#nomes ul');
+      var input = document.querySelector('#nomes input');
+      var button = document.querySelector('#nomes button');
+
+      var nomes = ["Diego", "Gabriel", "Lucas"];
+
+      function listar() {
+        lista.innerHTML ='';
+
+        for (todo of nomes) {
+          var todosElement = document.createElement('li');
+          var todosTxt = document.createTextNode(todo)
+
+          todosElement.appendChild(todosTxt);
+          lista.appendChild(todosElement);
+        }
+      }
+  listar();
+
+  function add() {
+    var todosTxt = input.value;
+
+    nomes.push(todosTxt);
+    input.value ='';
+    listar();
+  }
+  button.onclick = add;
+      
+    </script>
+  </body>
+</html

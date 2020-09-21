@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Ex3</title>
+  </head>
+  <body>
+    <div class="nomes" id="nomes">
+      <ul id="lista"></ul>
+    </div>
+    <ul>
+      
+    <script>
+      var lista = document.getElementById('lista');
+      var nomes = ["Diego", "Gabriel", "Lucas"];
+
+      function listar() {
+        for (todo of nomes) {
+          var todosElement = document.createElement('li');
+          var todosTxt = document.createTextNode(todo)
+
+          todosElement.appendChild(todosTxt);
+          lista.appendChild(todosElement);
+        }
+      }
+  listar();
+      
+    </script>
+  </body>
+</html>

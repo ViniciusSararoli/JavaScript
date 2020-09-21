@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Ex2</title>
 
     <style>
       .pop{
-        background: #9e3535;
+        border: solid 1px;
         width: 200px;
         height: 200px;
         display: none;
+      
         
       }
     </style>
@@ -28,19 +29,17 @@
   <script>
     var cadastrar = document.querySelector
     ('input[name=cadastro]')
-    var fechar = document.querySelector('input[name=fechar]')
+   
     var getRandomColor = document.querySelector('pop');
 
     cadastrar.onclick = function() {
       cadastrar = document.getElementById('pop').style.display = 'block';
     }
-     fechar.onclick = function fechar () {
-      fechar = document.getElementById('pop').style.display = 'none'; 
-     }
+     
 
 
 
-     getRandomColor.onmouseover = function getRandomColor() {
+     function getRandomColor(id) {
 var letters = "0123456789ABCDEF";
 var color = "#";
 for (var i = 0; i < 6; i++) {
